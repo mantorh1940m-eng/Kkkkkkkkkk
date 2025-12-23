@@ -1,0 +1,74 @@
+body {
+    font-family: 'Cairo', sans-serif;
+    background: #050505;
+    background-image: radial-gradient(circle at top right, #1a0b0b, transparent), 
+                      radial-gradient(circle at bottom left, #0b111a, transparent);
+    color: white;
+    min-height: 100vh;
+}
+
+.navbar {
+    background: rgba(0, 0, 0, 0.8) !important;
+    backdrop-filter: blur(10px);
+    border-bottom: 2px solid #ffc107;
+}
+
+.logo-img {
+    height: 45px;
+    filter: drop-shadow(0 0 5px #ff4500);
+}
+
+.side-dragon-img {
+    width: 120px;
+    animation: float 3s ease-in-out infinite;
+}
+
+@keyframes float {
+    0%, 100% { transform: translateY(0px); }
+    50% { transform: translateY(-10px); }
+}
+
+.glass-card {
+    background: rgba(255, 255, 255, 0.03);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 20px;
+    box-shadow: 0 15px 35px rgba(0,0,0,0.5);
+}
+
+.form-control {
+    background: rgba(0, 0, 0, 0.4);
+    border: 1px solid #444;
+    color: white !important;
+}
+
+.form-control:focus {
+    background: rgba(0, 0, 0, 0.6);
+    border-color: #ffc107;
+    box-shadow: 0 0 10px rgba(255, 193, 7, 0.3);
+}
+
+.article-box {
+    background: linear-gradient(145deg, #111, #1a1a1a);
+    border-radius: 15px;
+    padding: 25px;
+    margin-bottom: 20px;
+    border-right: 5px solid #ffc107;
+    transition: 0.3s;
+}
+
+.article-box:hover {
+    transform: scale(1.01);
+    background: #1d1d1d;
+}
+
+.social-icon {
+    color: #ffc107;
+    font-size: 1.8rem;
+    margin: 0 15px;
+    transition: 0.3s;
+}
+
+.social-icon:hover {
+    color: white;
+    text-shadow: 0 0 10px #ffc107;
+}
